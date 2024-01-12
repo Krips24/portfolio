@@ -50,7 +50,10 @@ const Projects = () => {
                 Empowering users to achieve goals with ease, whether at home or
                 on the go.
               </p>
-              <a className="text-indigo-500 inline-flex items-center mt-3">
+              <a
+                href="/organic"
+                className="text-indigo-500 inline-flex items-center mt-3"
+              >
                 Learn More
                 <svg
                   fill="none"
@@ -82,7 +85,10 @@ const Projects = () => {
                 addressing the issue of lost or unavailable records in crucial
                 situations.
               </p>
-              <a className="text-indigo-500 inline-flex items-center mt-3">
+              <a
+                href="/meditrack"
+                className="text-indigo-500 inline-flex items-center mt-3"
+              >
                 Learn More
                 <svg
                   fill="none"
@@ -114,7 +120,10 @@ const Projects = () => {
                 histories, mitigating challenges of lost records in critical
                 moments.
               </p>
-              <a className="text-indigo-500 inline-flex items-center mt-3">
+              <a
+                href="/keeper"
+                className="text-indigo-500 inline-flex items-center mt-3"
+              >
                 Learn More
                 <svg
                   fill="none"

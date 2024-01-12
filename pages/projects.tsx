@@ -1,10 +1,18 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 const Projects = () => {
+  // Configuring fade-in animation
+  const fadeIn = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 1000 },
+  });
+
   return (
-    <div className="bg-image">
+    <animated.div className="bg-image" style={fadeIn}>
       <Navbar />
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
@@ -14,17 +22,18 @@ const Projects = () => {
             </div>
             <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
               <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">
-                Space The Final Frontier
+                Explore My Creations
               </h1>
               <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-                Street art subway tile salvia four dollar toast bitters selfies
-                quinoa yuccie synth meditation iPhone intelligentsia prism tofu.
-                Viral gochujang bitters dreamcatcher.
+                Embark on a journey through innovation as we unveil our
+                groundbreaking project section, where creativity meets purpose.
+                Explore the realms of cutting-edge solutions and transformative
+                ideas that define the essence of our commitment to excellence.
               </p>
             </div>
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+            <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
               <div className="rounded-lg h-64 overflow-hidden">
                 <img
                   alt="content"
@@ -36,9 +45,10 @@ const Projects = () => {
                 Organic.in
               </h2>
               <p className="text-base leading-relaxed mt-2">
-                Swag shoivdigoitch literally meditation subway tile tumblr
-                cold-pressed. Gastropub street art beard dreamcatcher neutra,
-                ethical XOXO lumbersexual.
+                Pioneered an AI-driven health website offering personalized meal
+                plans with detailed macros, fostering informed dietary choices.
+                Empowering users to achieve goals with ease, whether at home or
+                on the go.
               </p>
               <a className="text-indigo-500 inline-flex items-center mt-3">
                 Learn More
@@ -54,8 +64,8 @@ const Projects = () => {
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </a>
-            </div>
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+            </animated.div>
+            <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
               <div className="rounded-lg h-64 overflow-hidden">
                 <img
                   alt="content"
@@ -67,9 +77,10 @@ const Projects = () => {
                 Meditrack
               </h2>
               <p className="text-base leading-relaxed mt-2">
-                Swag shoivdigoitch literally meditation subway tile tumblr
-                cold-pressed. Gastropub street art beard dreamcatcher neutra,
-                ethical XOXO lumbersexual.
+                Innovated a secure medical data management app, ensuring users
+                have instant access to their complete medical history,
+                addressing the issue of lost or unavailable records in crucial
+                situations.
               </p>
               <a className="text-indigo-500 inline-flex items-center mt-3">
                 Learn More
@@ -85,8 +96,8 @@ const Projects = () => {
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </a>
-            </div>
-            <div className="p-4 md:w-1/3 sm:mb-0 mb-6">
+            </animated.div>
+            <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
               <div className="rounded-lg h-64 overflow-hidden">
                 <img
                   alt="content"
@@ -98,9 +109,10 @@ const Projects = () => {
                 Keeper-App
               </h2>
               <p className="text-base leading-relaxed mt-2">
-                Swag shoivdigoitch literally meditation subway tile tumblr
-                cold-pressed. Gastropub street art beard dreamcatcher neutra,
-                ethical XOXO lumbersexual.
+                Crafted a groundbreaking medical data app, providing secure
+                storage and instant retrieval of comprehensive medical
+                histories, mitigating challenges of lost records in critical
+                moments.
               </p>
               <a className="text-indigo-500 inline-flex items-center mt-3">
                 Learn More
@@ -116,12 +128,12 @@ const Projects = () => {
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
               </a>
-            </div>
+            </animated.div>
           </div>
         </div>
       </section>
       <Footer />
-    </div>
+    </animated.div>
   );
 };
 

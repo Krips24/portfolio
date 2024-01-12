@@ -1,10 +1,18 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
 function Home() {
+  // Configuring fade-in animation
+  const fadeIn = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+    config: { duration: 1000 },
+  });
+
   return (
-    <div className="bg-image">
+    <animated.div className="bg-image" style={fadeIn}>
       <Navbar />
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -24,7 +32,7 @@ function Home() {
               good but also deliver a memorable online experience.
             </p>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <div className="">
             <img
               className="object-cover object-center rounded"
               alt="hero"
@@ -34,7 +42,7 @@ function Home() {
         </div>
       </section>
       <Footer />
-    </div>
+    </animated.div>
   );
 }
 

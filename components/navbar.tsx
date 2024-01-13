@@ -39,7 +39,12 @@ function Navbar() {
             >
               Resume
             </Link> */}
-            <Link href={"/resume.pdf"} className="mr-5 hover:text-gray-900">
+            <Link
+              href={
+                "https://drive.google.com/file/d/1Gn7gNIuxdY-YGT6AZccHU46_xX9fii-W/view?usp=drive_link"
+              }
+              className="mr-5 hover:text-gray-900"
+            >
               Resume
             </Link>
             <Link href={"/about"} className="mr-5 hover:text-gray-900">

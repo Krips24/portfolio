@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import Link from "next/link";
 
 const Projects = () => {
   // Configuring fade-in animation
@@ -34,13 +35,16 @@ const Projects = () => {
           </div>
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
             <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="content"
-                  className="object-cover object-center h-full w-full transition-transform transform hover:scale-105"
-                  src="/organic.jpg"
-                />
-              </div>
+              <Link href="/organic">
+                <div className="rounded-lg h-64 overflow-hidden">
+                  <img
+                    alt="content"
+                    className="object-cover object-center h-full w-full transition-transform transform hover:scale-105"
+                    src="/organic.jpg"
+                  />
+                </div>
+              </Link>
+
               <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
                 Organic.in
               </h2>
@@ -68,16 +72,19 @@ const Projects = () => {
                 </svg>
               </a>
             </animated.div>
+
             <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="content"
-                  className="object-cover object-center h-full w-full transition-transform transform hover:scale-105"
-                  src="/meditrack.jpg"
-                />
-              </div>
+              <Link href={"/meditrack"}>
+                <div className="rounded-lg h-64 overflow-hidden">
+                  <img
+                    alt="content"
+                    className="object-cover object-center h-full w-full transition-transform transform hover:scale-105"
+                    src="/meditrack.jpg"
+                  />
+                </div>
+              </Link>
               <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                Meditrack
+                MediTrack Healthcare
               </h2>
               <p className="text-base leading-relaxed mt-2">
                 Innovated a secure medical data management app, ensuring users
@@ -104,13 +111,15 @@ const Projects = () => {
               </a>
             </animated.div>
             <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="content"
-                  className="object-cover object-center h-full w-full transition-transform transform hover:scale-105"
-                  src="google.jpg"
-                />
-              </div>
+              <Link href={"/keeper"}>
+                <div className="rounded-lg h-64 overflow-hidden">
+                  <img
+                    alt="content"
+                    className="object-cover object-center h-full w-full transition-transform transform hover:scale-105"
+                    src="google.jpg"
+                  />
+                </div>
+              </Link>
               <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
                 Keeper-App
               </h2>

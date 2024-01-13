@@ -13,7 +13,7 @@ function Home() {
 
   return (
     <animated.div className="bg-image" style={fadeIn}>
-      <Navbar />
+      {/* <Navbar /> */}
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 ml-16 items-center text-center">
@@ -44,128 +44,29 @@ function Home() {
 
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
-          <div className="flex flex-col">
-            <div className="h-1 bg-gray-200 rounded overflow-hidden">
-              <div className="w-24 h-full bg-indigo-500"></div>
-            </div>
-            <div className="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-              <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">
-                Explore My Creations
-              </h1>
-              <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">
-                Embark on a journey through innovation as we unveil our
-                groundbreaking project section, where creativity meets purpose.
-                Explore the realms of cutting-edge solutions and transformative
-                ideas that define the essence of our commitment to excellence.
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-            <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="content"
-                  className="object-cover object-center h-full w-full transition-transform transform hover:scale-105"
-                  src="/organic.jpg"
-                />
-              </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                Organic.in
-              </h2>
-              <p className="text-base leading-relaxed mt-2">
-                Pioneered an AI-driven health website offering personalized meal
-                plans with detailed macros, fostering informed dietary choices.
-                Empowering users to achieve goals with ease, whether at home or
-                on the go.
-              </p>
-              <a
-                href="/organic"
-                className="text-indigo-500 inline-flex items-center mt-3"
-              >
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </animated.div>
-            <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="content"
-                  className="object-cover object-center h-full w-full transition-transform transform hover:scale-105"
-                  src="/meditrack.jpg"
-                />
-              </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                Meditrack
-              </h2>
-              <p className="text-base leading-relaxed mt-2">
-                Innovated a secure medical data management app, ensuring users
-                have instant access to their complete medical history,
-                addressing the issue of lost or unavailable records in crucial
-                situations.
-              </p>
-              <a
-                href="/meditrack"
-                className="text-indigo-500 inline-flex items-center mt-3"
-              >
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </animated.div>
-            <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
-              <div className="rounded-lg h-64 overflow-hidden">
-                <img
-                  alt="content"
-                  className="object-cover object-center h-full w-full transition-transform transform hover:scale-105"
-                  src="google.jpg"
-                />
-              </div>
-              <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-                Keeper-App
-              </h2>
-              <p className="text-base leading-relaxed mt-2">
-                Crafted a groundbreaking medical data app, providing secure
-                storage and instant retrieval of comprehensive medical
-                histories, mitigating challenges of lost records in critical
-                moments.
-              </p>
-              <a
-                href="/keeper"
-                className="text-indigo-500 inline-flex items-center mt-3"
-              >
-                Learn More
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  className="w-4 h-4 ml-2"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </animated.div>
+          <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              className="inline-block w-8 h-8 text-gray-400 mb-8"
+              viewBox="0 0 975.036 975.036"
+            >
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p className="leading-relaxed text-lg">
+              Hello! I'm a passionate MERN developer, specializing in Next.js,
+              Typescript, and Tailwind. Fueled by my enthusiasm for emerging
+              technologies, I bring hands-on project experience to the table.
+              Committed to staying ahead of industry trends, I thrive on
+              translating innovative ideas into seamless web applications. Let's
+              embark on a journey where I leverage my skills to create
+              captivating digital experiences.
+            </p>
+            <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">
+              KRAPANSH SHRIVASTAVA
+            </h2>
+            <p className="text-gray-500">Software Developer</p>
           </div>
         </div>
       </section>

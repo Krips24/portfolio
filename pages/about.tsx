@@ -5,7 +5,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="bg-image">
-      <Navbar />
+      {/* <Navbar /> */}
       
       <Footer />
     </div>

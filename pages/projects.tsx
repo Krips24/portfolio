@@ -116,7 +116,7 @@ const Projects = () => {
                   <img
                     alt="content"
                     className="object-cover object-center h-full w-full transition-transform transform hover:scale-105"
-                    src="google.jpg"
+                    src="google.avif"
                   />
                 </div>
               </Link>

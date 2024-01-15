@@ -37,16 +37,16 @@ const Organic = () => {
                 <li>
                   <strong>AI-Generated Personalized Meal Plans: </strong>{" "}
                   Organic.in leverages advanced artificial intelligence to craft
-                  personalized meal plans tailored to the user's health and
+                  personalized meal plans tailored to the user&apos;s health and
                   wellness objectives.
                 </li>
                 <br />
                 <li>
                   <strong>Comprehensive Recipe Database: </strong>
                   Explore a vast collection of recipes that align with your
-                  dietary preferences and health goals. Whether you're aiming to
-                  lose weight, build muscle, or maintain a balanced diet,
-                  Organic.in has the recipes for you.
+                  dietary preferences and health goals. Whether you&apos;re
+                  aiming to lose weight, build muscle, or maintain a balanced
+                  diet, Organic.in has the recipes for you.
                 </li>
                 <br />
 

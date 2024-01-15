@@ -54,7 +54,7 @@ const Projects = () => {
                 Empowering users to achieve goals with ease, whether at home or
                 on the go.
               </p>
-              <a
+              <Link
                 href="/organic"
                 className="text-indigo-500 inline-flex items-center mt-3"
               >
@@ -70,7 +70,7 @@ const Projects = () => {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </animated.div>
 
             <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
@@ -92,7 +92,7 @@ const Projects = () => {
                 addressing the issue of lost or unavailable records in crucial
                 situations.
               </p>
-              <a
+              <Link
                 href="/meditrack"
                 className="text-indigo-500 inline-flex items-center mt-3"
               >
@@ -108,7 +108,7 @@ const Projects = () => {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </animated.div>
             <animated.div className="p-4 md:w-1/3 sm:mb-0 mb-6" style={fadeIn}>
               <Link href={"/keeper"}>
@@ -129,7 +129,7 @@ const Projects = () => {
                 histories, mitigating challenges of lost records in critical
                 moments.
               </p>
-              <a
+              <Link
                 href="/keeper"
                 className="text-indigo-500 inline-flex items-center mt-3"
               >
@@ -145,7 +145,7 @@ const Projects = () => {
                 >
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
-              </a>
+              </Link>
             </animated.div>
           </div>
         </div>

@@ -86,7 +86,7 @@ const About = () => {
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Feel free to reach out to us at any time; your inquiries and
+              Feel free to reach out to us at any time, your inquiries and
               feedback are highly valued.
             </p>
           </div>

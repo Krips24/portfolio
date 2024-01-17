@@ -18,6 +18,10 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { SiCanva } from "react-icons/si";
+import { DiJavascript } from "react-icons/di";
+import { BiLogoTypescript } from "react-icons/bi";
+
+
 
 
 const icons = [
@@ -48,7 +52,7 @@ const icons = [
   },
   {
     name: "react.js",
-    icon: <FaGitAlt className="text-8xl animate-pulse" />,
+    icon: <DiJavascript className="text-8xl animate-pulse" />,
   },
   {
     name: "react.js",
@@ -57,6 +61,14 @@ const icons = [
   {
     name: "react.js",
     icon: <IoLogoCss3 className="text-8xl animate-pulse" />,
+  },
+  {
+    name: "react.js",
+    icon: <FaGitAlt className="text-8xl animate-pulse" />,
+  },
+  {
+    name: "react.js",
+    icon: <BiLogoTypescript className="text-8xl animate-pulse" />,
   },
   {
     name: "react.js",

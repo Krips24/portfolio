@@ -1,8 +1,68 @@
+//@ts-nocheck
+
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Link from "next/link";
+import "@fortawesome/fontawesome-free/css/all.css";
+import IconsPath from "./iconsPath";
+import { Icons } from "./icons";
+import { TbBrandNextjs } from "react-icons/tb";
+import { RiReactjsLine } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
+import { FaGitAlt } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+import { SiCanva } from "react-icons/si";
+
+
+const icons = [
+  {
+    name: "next.js",
+    icon: <TbBrandNextjs className="text-8xl animate-pulse" />,
+  },
+  {
+    name: "react.js",
+    icon: <RiReactjsLine className="text-8xl animate-pulse" />,
+  },
+
+  {
+    name: "react.js",
+    icon: <FaNodeJs className="text-8xl animate-pulse" />,
+  },
+  {
+    name: "react.js",
+    icon: <SiExpress className="text-8xl animate-pulse" />,
+  },
+  {
+    name: "react.js",
+    icon: <DiMongodb className="text-8xl animate-pulse" />,
+  },
+  {
+    name: "react.js",
+    icon: <SiTailwindcss className="text-8xl animate-pulse" />,
+  },
+  {
+    name: "react.js",
+    icon: <FaGitAlt className="text-8xl animate-pulse" />,
+  },
+  {
+    name: "react.js",
+    icon: <FaHtml5 className="text-8xl animate-pulse" />,
+  },
+  {
+    name: "react.js",
+    icon: <IoLogoCss3 className="text-8xl animate-pulse" />,
+  },
+  {
+    name: "react.js",
+    icon: <SiCanva className="text-8xl animate-pulse" />,
+  },
+];
 
 const Projects = () => {
   // Configuring fade-in animation
@@ -150,6 +210,34 @@ const Projects = () => {
           </div>
         </div>
       </section>
+
+      {/* Skills Section */}
+
+      {/* headline */}
+      <section className="text-gray-600 body-font">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="text-center mb-20">
+            <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
+              My Skills
+            </h1>
+            <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
+              Navigating the Digital Landscape: A Showcase of My Diverse and
+              Honed Skill Set
+            </p>
+            <div className="flex mt-6 justify-center">
+              <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex" />
+            </div>
+          </div>
+
+          {/* Icons */}
+          <div className="flex justify-center items-center gap-20 flex-wrap max-w-lg mx-auto">
+            {icons.map((item, index) => {
+              return <>{item.icon}</>;
+            })}
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </animated.div>
   );

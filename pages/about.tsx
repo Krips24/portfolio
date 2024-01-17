@@ -136,7 +136,12 @@ const About = () => {
                 </button>
               </div>
               <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                <a className="text-indigo-500">krapansh.work@gmail.com</a>
+                <a
+                  href="mailto:krpansh.work@gmail.com"
+                  className="text-indigo-500"
+                >
+                  krapansh.work@gmail.com
+                </a>
                 <p className="leading-normal my-5">
                   Ujjain, India
                   <br />

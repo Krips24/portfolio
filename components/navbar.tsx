@@ -41,7 +41,7 @@ function Navbar() {
             </Link> */}
             <Link
               href={
-                "https://drive.google.com/file/d/1A_4Q2SnZ0W8Y372KhgJGU9STJOrF-TkU/view?usp=sharing"
+                "https://drive.google.com/file/d/1oTXarowwYjkVLpwDfamiWhknGHXeYySv/view?usp=sharing"
               }
               className="mr-5 hover:text-gray-900"
             >

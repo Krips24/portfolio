@@ -21,9 +21,6 @@ import { SiCanva } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 import { BiLogoTypescript } from "react-icons/bi";
 
-
-
-
 const icons = [
   {
     name: "next.js",
@@ -196,10 +193,10 @@ const Projects = () => {
                 Keeper-App
               </h2>
               <p className="text-base leading-relaxed mt-2">
-                Crafted a groundbreaking medical data app, providing secure
-                storage and instant retrieval of comprehensive medical
-                histories, mitigating challenges of lost records in critical
-                moments.
+                Crafted a sophisticated Note-keeping web app, enabling users to
+                seamlessly create, store, and manage notes. A dynamic feature
+                was implemented for users to delete notes post-creation,
+                enhancing user control and organization within the application.
               </p>
               <Link
                 href="/keeper"
